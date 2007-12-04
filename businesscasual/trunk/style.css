@@ -1,0 +1,358 @@
+/*
+Theme Name: Business Casual 
+Theme URI: http://www.siolon.com/2007/business-casual-wordpress-theme/
+Description: A simple theme with a business casual style.
+Theme Version: 1.1
+Author: Chris Poteet
+Author URI: http://www.siolon.com
+
+	All elements of this theme are protected by the GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+    Built on the Basic WordPress theme:
+    http://www.visual-assault.org/wpTheme_basic/
+
+	Business Casual uses Fam Fam Fam Silk Icons: 
+	http://www.famfamfam.com/lab/icons/silk/
+
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #E9E9E9;
+}
+
+/* Header & Navigation */
+
+#header {
+	margin: 10px auto auto auto;
+	position: relative;
+	float: none;
+	left: auto;
+	width: 760px;
+	height: 85px;
+	padding-top: 10px;
+	background-color: #800000;
+	text-align: center;
+	border-right: 1px solid #800000;
+	border-left: 1px solid #800000;
+}
+#header h1 {
+	float: left;
+	margin: 15px 0 0 15px;
+	letter-spacing: 2px;
+	font-family: Georgia, sans-serif;
+}
+#header h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+#header h3 {
+	margin: 0;
+	padding-top: 25px;
+	padding-left: 250px;
+	text-align: left;
+	font: italic 40px georgia, sans-serif;
+	color: #fff;
+}
+#nav {
+	height: 75px;
+}
+#header ul {
+	list-style-type: none;
+	vertical-align: bottom;
+	margin: 34px 15px 0 0;
+	padding: 20px 20px 0 20px;
+	display: inline;
+	float: right;
+	height: 30px;
+}
+#header ul.ie {
+	list-style-type: none;
+	vertical-align: bottom;
+	margin: 34px 15px 0 0;
+	padding: 20px;
+	display: inline;
+	float: right;
+	height: 30px;
+}
+.current_page_item a {
+	background-color: #fff !important;
+}
+#header li {
+	display: inline;
+}
+#header li a {
+	color: #000;
+	text-decoration: none;
+	padding: 13px;
+	margin: 0;
+	font: 14px Georgia, serif;
+	background-color: #e9e9e9;
+	text-transform: uppercase;
+}
+#header li a:hover {
+	background-color: #fff;
+}
+a img {
+	border: none;
+}
+
+/* Search Styles */
+
+#search {
+	position: absolute;
+	left: 600px;
+	margin-top: 3px;
+}
+#header input {
+	background-image: url(images/back_input.gif);
+	background-position: center top;
+	background-repeat: repeat-x;
+	border: 1px solid #A79D8F;
+	height: 14px;
+	padding: 2px 1px;
+	font: 10px verdana, sans-serif;
+}
+#header input[type="image"] {
+	border: none;
+	background-image: none;
+	vertical-align: top;
+	height: 16px;
+}
+
+/* Content Styles */
+
+#main {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 760px;
+	padding-top: 10px;
+	border-right: 1px solid #800000;
+	border-left: 1px solid #800000;
+	clear: both !important;
+}
+blockquote {
+	border-left: 1px solid #800000;
+	padding-left: 5px;
+}
+
+#indexcontent {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 475px;
+	font: 12px "Trebuchet MS", arial, sans-serif;
+	text-align: justify;
+	min-height: 500px;
+}
+#content {
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 700px;
+	font: 12px "Trebuchet MS", arial, sans-serif;
+	text-align: justify;
+}
+#content img {
+	border: 1px solid #ccc;
+	padding: 4px;
+	margin-left: 6px;
+}
+span img, #meta img {
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+span img {
+	vertical-align: top;
+}
+#meta {
+	margin-left: 150px;
+	border-top: 1px solid #800000;
+	border-bottom: 1px solid #800000;
+	background-color: #eee;
+	width: 400px;
+	text-align: center;
+	padding: 10px;
+}
+#meta img {
+ vertical-align: top;
+ }
+#main ul, #main li {
+	margin-left: 0;
+	list-style-type: none;
+	list-style-image: url('images/arrows.gif');
+}
+#main h3 {
+	font-size: 16px;
+}
+h3.single {
+	margin-bottom: 0;
+}
+#previousposts {
+	padding-left: 30px;
+}
+#previousposts li {
+	list-style-image: url('images/posts.png');
+	margin: 0 0 30px 0;
+}
+#previousposts h4 {
+	font-size: 15px;
+	margin: 0;
+}
+#previousposts .date {
+	font-size: 12px;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+	float: right;
+	width: 200px;
+	text-align: left;
+	font: 11px verdana, sans-serif;
+	vertical-align: top;
+	border-left: 1px outset #9F9F9F;
+	padding-left: 0;
+	margin-top: 25px;
+}
+#sidebar h2 {
+	border-bottom: 1px solid #DBD5C5;
+	color: #800000;
+	font: bold 14px Georgia, serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#sidebar ul {
+	padding-left: 0;
+}
+#sidebar li {
+	padding: 4px;
+	list-style-image: none;
+	border-bottom: 1px solid #ccc;
+	background-color: #eee;
+}
+#sidebar li:hover {
+	padding: 4px;
+	list-style-image: none;
+	border-bottom: 1px solid #ccc;
+	background-color: #ccc;
+	background-image: url('images/arrow.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#sidebar li:hover a, #sidebar li:hover a:hover {
+	color: #000;
+}
+#sidebar a:hover {
+	text-decoration: none;
+}
+#content h2 {
+	color: #800000;
+	border-bottom: 1px solid #DBD5C5;
+}
+h6 {
+	margin: 0;
+	padding-top: 22px;
+	font: italic 16px Georgia, serif;
+}
+hr {
+	background-color: #800000;
+}
+
+/* Footer Styles */
+
+#footer {
+	margin: auto;
+	width: 760px;
+	color: #fff;
+	text-align: center;
+	padding-top: 25px;
+	height: 55px;
+	background-color: #800000;
+	font: italic 14px "Trebuchet MS", arial, sans-serif;
+	border-right: 1px solid #800000;
+	border-left: 1px solid #800000;
+	clear: both;
+}
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Comment Styles */
+
+#commentcontainer {
+ width: 675px;
+ background-color: #fff;
+ }
+ 
+#commentcontainer h4 {
+	background: url('images/comments.gif') no-repeat;
+	padding-left: 18px;
+}
+
+#comments {
+	padding-left: 0;
+	width: 350px;
+}
+#replies {
+ float: left;
+ width: 350px;
+ background-color: #fff;
+}
+#reply {
+ float: right;
+ width: 250px;
+ background-color: #fff;
+ margin-left: 10px;
+ }
+#comments p {
+	text-align: left;
+}
+ol#comments li {
+	border-top: 1px solid #E9E9E9;
+	border-bottom: 1px solid #E9E9E9;
+	position: relative;
+	list-style-image: none;
+	border: 1px solid #800000;
+	margin-top: 15px;
+	padding: 5px;
+	position: relative;
+	text-align: right;
+}
+cite {
+	position: relative;
+	bottom: -13px;
+	right: 5px;
+	border: 1px solid #800000;
+	padding: 2px 4px 2px 4px;
+	background-color: white;
+}
+.alt {
+	background-color: #eee;
+}
+input, textarea {
+	background-image: url(images/back_input.gif);
+	background-position: center top;
+	background-repeat: repeat-x;
+	border: 1px solid #A79D8F;
+	font: 10px verdana, sans-serif;
+}
+
+/* Archive Styles */
+
+.archive {
+	border-bottom: 1px solid #ccc;
+}
+
+/* Anchor Styles */
+
+a {
+	color: #800;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
