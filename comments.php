@@ -8,7 +8,8 @@
 				
 				<p class="nocomments"><?php _e("This post is password protected. Enter the password to view comments."); ?><p>
 				
-				<?php return;
+				<?php
+				return;
             }
         }
 
@@ -17,11 +18,11 @@
 ?>
 
 <div id="commentcontainer">
+
+<?php if ($comments) : ?>
 	<h4><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h4> 
 	<div id="replies">
-
-	<?php if ($comments) : ?>
-  	<ol id="comments">
+  <ol id="comments">
 	<?php foreach ($comments as $comment) : ?>
 		<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
 			

@@ -14,8 +14,8 @@
 </head>
 
 <body>
-
 <div id="header">
+
 
 <div id="search">
 <form id="searchform" action="<?php bloginfo('url'); ?>" method="get">
@@ -24,14 +24,13 @@
 </form>
 </div>
 
-<h1><a href="<?php bloginfo('wpurl'); ?>"><?php bloginfo('name'); ?></a></h1>
-<?php  
- $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';  
- if(strpos($user_agent, 'MSIE') !== false) { ?>
-  <ul class="ie"><?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?></ul>
- <?php } else {  ?>
-  <ul><?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?></ul>
-<?php } ?> 	
+
+<a href="<?php bloginfo('wpurl'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/title.gif" alt="<?php bloginfo('name'); ?>" /></a>
+
+
+<ul>
+<?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?>
+</ul>
 
 </div>
 

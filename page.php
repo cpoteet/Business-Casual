@@ -9,7 +9,7 @@
 		<div>
 			<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 			<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
-			<?php edit_post_link('(Edit)', '<p>', '</p>'); ?>
+			<?php edit_post_link('(e)', '<p>', '</p>'); ?>
 		</div>
 	</div>
 <?php endwhile; endif; ?>

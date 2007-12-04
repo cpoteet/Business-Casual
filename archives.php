@@ -26,7 +26,7 @@
 	<h4 class="pagetitle">Author Archive</h4>
 
 	<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-	<h3>Blog Archives</h3>
+	<h4 class="pagetitle">Blog Archives</h4>
 
 	<?php } ?>
 
@@ -50,6 +50,7 @@
 			</div>
 	
 		<?php endwhile; ?>
+
 	<p>
 		<span><?php posts_nav_link('','','&laquo; Previous Entries') ?></span>
 		<span><?php posts_nav_link('','Next Entries &raquo;','') ?></span>

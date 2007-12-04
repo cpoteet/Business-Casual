@@ -3,19 +3,17 @@
 <div id="content">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	
+
+	
 
 		<h3 class="single"><?php the_title(); ?></h3>
-
-		<span> <img src="<?php bloginfo('template_directory'); ?>/images/date.gif" alt="Posted on <?php the_time('F jS, Y') ?>" height="16" width="16" /> <?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
-
+		<span> <img src="<?php bloginfo('template_directory'); ?>/images/date.gif" alt="Posted on <?php the_time('F jS, Y') ?>" /> <?php the_time('F jS, Y') ?> by <?php the_author_posts_link(); ?></span>
 		<div>
-
 			<?php the_content(); ?>
-
 			<p id="meta">
-				 <img src="<?php bloginfo('template_directory'); ?>/images/tag.gif" alt="Tags" height="16" width="16" /> <?php the_tags('', ', ', ''); ?>  <br />
-				 <img src="<?php bloginfo('template_directory'); ?>/images/folder.gif" alt="Categories" height="16" width="16" /> <?php the_category(', ') ?><br />
-				You can follow any responses to this entry through the <?php comments_rss_link('RSS 2.0'); ?> feed. 
+				 <img src="<?php bloginfo('template_directory'); ?>/images/tag.gif" /> <?php the_category(', ') ?><br />
+				<?php edit_post_link('Edit','',''); ?> You can follow any responses to this entry through the <?php comments_rss_link('RSS 2.0'); ?> feed. 
 				
 				<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 					// Both Comments and Pings are open ?>
@@ -33,16 +31,17 @@
 					// Neither Comments, nor Pings are open ?>
 					Both comments and pings are currently closed.			
 				
-				<?php } ?>					
+				<?php } /* edit_post_link('Edit this entry.','',''); */ ?>					
 			</p>
-			
-	<?php edit_post_link('(Edit)','',''); ?>
-	
+
+
+
+		
 	<?php comments_template(); ?>
 	
 	<?php endwhile; else: ?>
 		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-	<?php endif; ?>
-  	</div>
 	
+<?php endif; ?>
+    </div>
 <?php get_footer(); ?>
