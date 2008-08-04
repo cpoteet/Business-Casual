@@ -2,7 +2,8 @@
 Theme Name: Business Casual 
 Theme URI: http://www.siolon.com/2007/business-casual-wordpress-theme/
 Description: A simple theme with a business casual style.
-Theme Version: 1.1
+Theme Version: 1.1.1
+Tags: red, gray, two, columns, fixed, width, business, casual
 Author: Chris Poteet
 Author URI: http://www.siolon.com
 
@@ -284,9 +285,9 @@ hr {
 /* Comment Styles */
 
 #commentcontainer {
- width: 675px;
- background-color: #fff;
- }
+	width: 675px;
+	background-color: #fff;
+}
  
 #commentcontainer h4 {
 	background: url('images/comments.gif') no-repeat;
@@ -298,16 +299,16 @@ hr {
 	width: 350px;
 }
 #replies {
- float: left;
- width: 350px;
- background-color: #fff;
+	float: left;
+	width: 350px;
+	background-color: #fff;
 }
 #reply {
- float: right;
- width: 250px;
- background-color: #fff;
- margin-left: 10px;
- }
+ 	float: right;
+ 	width: 250px;
+ 	background-color: #fff;
+ 	margin-left: 10px;
+}
 #comments p {
 	text-align: left;
 }
@@ -345,6 +346,18 @@ input, textarea {
 
 .archive {
 	border-bottom: 1px solid #ccc;
+}
+
+/* TinyMCE Styles */
+
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left;
+}
+.aligncenter {
+	text-align: center;
 }
 
 /* Anchor Styles */
