@@ -28,9 +28,10 @@
 			<?php if ($comment->comment_approved == '0') : ?>
 			<em>Your comment is awaiting moderation.</em>
 			<?php endif; ?>
-			<?php edit_comment_link('e','',''); ?>
+			
 			<?php comment_text() ?>
-			<cite><?php comment_author_link() ?> on <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('m.d.y') ?></a></cite>
+			<?php if(function_exists('get_avatar')) { echo get_avatar($comment, '40'); } ?>
+			<cite><?php comment_author_link() ?> on <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('m.d.y') ?></a> (<?php edit_comment_link('e','',''); ?>)</cite>
 		</li>
 
 	<?php /* Changes every other comment to a different class */	
